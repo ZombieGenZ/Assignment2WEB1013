@@ -1,0 +1,272 @@
+.container {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header {
+    width: 100%;
+    background-color: rgb(0, 110, 255);
+}
+.banner {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.banner-left img {
+    width: 100%;
+}
+.banner-right {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.menu {
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(0, 110, 255);
+    height: 50px;
+}
+.menu>li {
+    list-style: none;
+    height: 100%;
+}
+.menu>li>a {
+    text-decoration: none;
+    height: 100%;
+    background-color: rgb(0, 110, 255);
+    /* border-radius: 10px; */
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.menu>li>a:hover {
+    color: black;
+    background-color: white;
+}
+.home {
+    margin-left: 20px;
+}
+.marquee {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+    background-color: antiquewhite;
+}
+.body {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.body-left {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.body-left img {
+    max-width: 100%;
+}
+.body-right {
+    display: grid;
+    grid-auto-rows: 70px;
+    padding-top: 40px;
+    padding-left: 5px;
+}
+.body-right a {
+    color: black;
+    text-decoration: none;
+}
+.card {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border: 1px solid black;
+}
+.card img, p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+.card:hover {
+    box-shadow: 0 0 5px black;
+}
+hr {
+    border-top: 3px solid rgb(0, 110, 255);
+}
+.footer {
+    background-color: rgb(0, 110, 255);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: white;
+}
+.foooter-left {
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.foooter-left a {
+    color: white;
+    text-decoration: none;
+}
+.foooter-left a:hover {
+    text-decoration: underline;
+}
+.foooter-left img {
+    margin-bottom: 5px;
+}
+.foooter-right {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 50px;
+}
+.icon2 {
+    margin-right: 5px;
+}
+.contact {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.QR {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100%;
+    width: 100px;
+    height: auto;
+}
+.info {
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column: 1 / 3;
+}
+.contact img {
+    cursor: pointer;
+}
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  .wrapper a {
+    color: white;
+  }
+  .wrapper .icon {
+    position: relative;
+    background: black;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: red;
+    color: #fff;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 110, 255);
+    min-width: 300px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown>a {
+    text-decoration: none;
+    height: 100%;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 10px 20px;
+    
+    transition: 0.3s;
+}
+.dropdown>a:hover {
+    color: black;
+    background-color: white;
+}
+.dropdown-content a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.dropdown-content:hover a:hover {
+    background-color: white;
+    color: black;
+}
