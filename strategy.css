@@ -273,3 +273,8 @@ hr {
     background-color: white;
     color: black;
 }
+.link {
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
